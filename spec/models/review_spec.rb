@@ -6,5 +6,6 @@ describe Review do
   it { should validate_presence_of :content_body }
   it { should validate_presence_of :rating }
   it { should validate_length_of :content_body}
+  it { should validate_numericality_of :rating }
 
 end
