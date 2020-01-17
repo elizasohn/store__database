@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_01_17_171324) do
   create_table "reviews", force: :cascade do |t|
     t.string "author"
     t.string "content_body"
+    t.integer "rating"
     t.integer "product_id"
   end
 
