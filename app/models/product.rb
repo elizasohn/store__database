@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
+  accepts_nested_attributes_for :reviews
   validates :name, presence: true
   validates :cost, presence: true
   validates :country_of_origin, presence: true
