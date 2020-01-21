@@ -27,7 +27,11 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
+    if params[:most_recent]
+      @products = @products.most_recent(params[:most_recent])
+    else
+      @product = Product.find(params[:id])
+    end 
     render :show
   end
 
