@@ -6,6 +6,7 @@ class Product < ApplicationRecord
   validates :country_of_origin, presence: true
   before_save(:titleize_product)
 
+  scope :with_most_reviews, -> { order(reviews: :desc)
   private
   def titleize_product
     self.name = self.name.titleize

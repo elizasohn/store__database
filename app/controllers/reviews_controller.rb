@@ -13,6 +13,7 @@ class ReviewsController < ApplicationController
       flash[:alert] = "Review successfully created!"
       redirect_to product_path(@product)
     else
+      flash[:alert] = "Review was not created!"
       render :new
     end
   end
