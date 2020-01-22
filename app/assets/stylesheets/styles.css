@@ -7,11 +7,11 @@ h1 {
   padding: 5%;
   font-family: Helvetica;
 }
-ul {
+.product_listing {
   background: white;
   border-radius: 20px;
   padding: 5%;
-  
+
 }
 .title {
   font-size: 40px;
