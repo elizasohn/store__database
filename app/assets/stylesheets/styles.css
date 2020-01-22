@@ -5,7 +5,8 @@ h1 {
   background: white;
   border-radius: 25px;
   padding: 5%;
-  font-family: Helvetica;
+  font-size: 40px;
+  font-family: Helvetica
 }
 .product_listing {
   background: white;
@@ -18,4 +19,9 @@ h1 {
   text-align: center;
   margin: 10%;
   border-radius: 25px;
+}
+.form {
+  background: white;
+  border-radius: 20px;
+  padding: 5%;
 }
